@@ -194,11 +194,6 @@ a:hover {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.banner-slide {
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
 .banner-ads-right {
   display: grid;
   grid-row: 1/2;
@@ -402,6 +397,63 @@ a:hover {
 }
 .slide-item-rate-star > i:not(:last-child) {
   color: #ffa500;
+}
+
+.brand {
+  padding-bottom: 1rem;
+}
+.brand-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 5rem;
+}
+.brand-list-item {
+  width: calc((120rem / 4) - 1rem);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.226);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.brand-list-item-img {
+  width: 50%;
+}
+
+.hlprod {
+  background-color: #f8f8f8;
+}
+.hlprod-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.hlprod-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.hlprod-brand {
+  width: 87rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hlprod-brand-item-link {
+  padding: 0.5rem 1.5rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.25s linear;
+}
+.hlprod-brand-item-link:hover {
+  background-color: rgba(128, 128, 128, 0.151);
 }
 
 /*# sourceMappingURL=style.css.map */

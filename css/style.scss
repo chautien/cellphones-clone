@@ -207,10 +207,7 @@ a:hover {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  &-slide {
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 1/2;
+  &-slider {
   }
   &-ads-right {
     display: grid;
@@ -286,6 +283,31 @@ a:hover {
     }
   }
 }
+// .slider-for {
+//   width: 100%;
+//   height: 30rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   &-item {
+//     width: 96%;
+//     &-img {
+//       width: 100%;
+//       display: inline-block;
+//     }
+//   }
+// }
+// .slider-nav {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   &-item {
+//     background-color: #fff;
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
 .flash {
   padding: 1rem 0;
   background-color: #f8f8f8;
@@ -416,6 +438,63 @@ a:hover {
         margin-right: 0.8rem;
         & > i:not(:last-child) {
           color: #ffa500;
+        }
+      }
+    }
+  }
+}
+.brand {
+  padding-bottom: 1rem;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 5rem;
+    &-item {
+      width: calc((120rem / 4) - 1rem);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(128, 128, 128, 0.226);
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      &-img {
+        width: 50%;
+      }
+    }
+  }
+}
+.hlprod {
+  background-color: #f8f8f8;
+  &-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  &-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+  &-brand {
+    width: 87rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &-item {
+      &-link {
+        padding: 0.5rem 1.5rem;
+        line-height: 1.4;
+        font-size: 1.2rem;
+        background-color: #fff;
+        border-radius: 20px;
+        display: inline-block;
+        transition: all 0.25s linear;
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.151);
         }
       }
     }
