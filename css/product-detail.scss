@@ -1,0 +1,57 @@
+$mainColor: #e0052b;
+$bgColor: #f5f8fd;
+
+body {
+  background-color: #fff;
+}
+.prod-ess {
+  padding-top: 11rem;
+  background-color: #fff;
+  &-heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.336);
+    margin-bottom: 1.5rem;
+    &-title {
+      font-size: 2.1rem;
+      font-weight: 900;
+      margin-right: 3rem;
+    }
+    &-rate {
+      display: flex;
+      justify-content: center;
+      &-star {
+        margin-right: 1rem;
+      }
+      &-star > i:not(:last-child) {
+        color: #ffa500;
+      }
+      &-text {
+        color: $mainColor;
+      }
+    }
+  }
+}
+.left {
+  max-width: 84rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &-image {
+    width: calc(84rem - 45rem);
+    &-top {
+      width: 100%;
+      overflow: hidden;
+      &-img {
+        width: 100%;
+      }
+    }
+  }
+  &-buy {
+    width: 100%;
+    max-width: 41.5rem;
+  }
+}
