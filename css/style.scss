@@ -283,31 +283,38 @@ a:hover {
     }
   }
 }
-// .slider-for {
-//   width: 100%;
-//   height: 30rem;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   &-item {
-//     width: 96%;
-//     &-img {
-//       width: 100%;
-//       display: inline-block;
-//     }
-//   }
-// }
-// .slider-nav {
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   &-item {
-//     background-color: #fff;
-//     width: 100%;
-//     height: 100%;
-//   }
-// }
+.slick-current {
+  border-bottom: 3px solid $mainColor;
+  font-weight: 700;
+}
+.slider-for-item {
+  border: none;
+}
+.slick-prev {
+  transform: translateX(+150%);
+  z-index: 600;
+}
+.slick-next {
+  transform: translateX(-150%);
+  z-index: 600;
+}
+.slider-nav {
+  height: 7rem;
+  background-color: #fff;
+  &-item {
+    height: 7rem;
+    width: 19rem;
+    text-align: center;
+    outline: none;
+    &-title {
+      font-size: 1.4rem;
+      padding: 2rem 0 1rem;
+    }
+    &-text {
+      font-size: 1.2rem;
+    }
+  }
+}
 .flash {
   padding: 1rem 0;
   background-color: #f8f8f8;
@@ -496,6 +503,63 @@ a:hover {
         &:hover {
           background-color: rgba(128, 128, 128, 0.151);
         }
+      }
+    }
+  }
+}
+.accs {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin-bottom: 2rem;
+  &-heading {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      display: inline-block;
+      font-size: 1.6rem;
+      font-weight: 800;
+      line-height: 1.7;
+    }
+    &-more {
+      padding: 0.5rem 1.5rem;
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 20px;
+      line-height: 1.5;
+      font-size: 1.2em;
+    }
+  }
+  &-list {
+    background-color: #fff;
+    padding: 2rem 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    &-item {
+      width: calc((100% - 12rem) / 10);
+      margin: 0 1rem 1rem 0;
+      text-align: center;
+      &-icon {
+        width: 100%;
+        height: 9rem;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        & > img {
+          width: 100%;
+        }
+      }
+      &-text {
+        font-size: 1.2rem;
+        font-weight: 800;
       }
     }
   }
