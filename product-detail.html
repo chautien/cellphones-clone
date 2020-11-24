@@ -19,6 +19,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script
+      src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js"
+      type="application/javascript"
+    ></script>
     <title>
       CellphoneS - Điện thoại, Laptop, iPad, phụ kiện chính hãng, giá tốt nhất
     </title>
@@ -107,13 +111,21 @@
                   src="image/prodetail/note_20_ultra_gold_4.jpg"
                   alt=""
                   class="left-image-top-img"
+                  id="productImage"
                 />
+                <div class="left-image-top-zoom" id="zoomResult"></div>
               </div>
             </div>
             <div class="left-buy">
               <div class="left-buy-area">
-                <label for="buy-area">Mua hàng từ: </label>
-                <select name="buyArea" id="buy-area">
+                <label for="buy-area" class="left-buy-area-label"
+                  >Mua hàng từ:
+                </label>
+                <select
+                  name="buyArea"
+                  id="buy-area"
+                  class="left-buy-area-select"
+                >
                   <option value="Hà Nội">Hà Nội</option>
                   <option value="TP Hồ Chí Minh" selected>
                     TP Hồ Chí Minh
@@ -141,10 +153,31 @@
                   <p class="left-buy-option-select-desc">17.900.000 đ</p>
                 </a>
               </div>
+              <div
+                style="display: flex; justify-content: flex-start"
+                class="left-buy-option"
+              >
+                <h3 class="left-buy-option-title">
+                  Chọn màu để xem giá và chi nhánh có hàng
+                </h3>
+                <a href="#" class="left-buy-option-select LBOS-cus">
+                  <h5 class="left-buy-option-select-title">Trắng</h5>
+                  <p class="left-buy-option-select-desc">22.600.000 đ</p>
+                </a>
+                <a href="#" class="left-buy-option-select LBOS-cus">
+                  <h5 class="left-buy-option-select-title">Vàng đồng</h5>
+                  <p class="left-buy-option-select-desc">22.250.000 đ</p>
+                </a>
+                <a href="#" class="left-buy-option-select LBOS-cus">
+                  <h5 class="left-buy-option-select-title">Đen</h5>
+                  <p class="left-buy-option-select-desc">22.250.000 đ</p>
+                </a>
+              </div>
               <div class="left-buy-hot">
                 <p class="left-buy-hot-desc">
-                  Hotsales từ 20/11 - 27/11: Giảm sốc chỉ còn 22.250.000đ (số
-                  lượng có hạn, không áp dụng cùng chương trình khác).
+                  Hotsales từ <span>20/11 - 27/11</span>: Giảm sốc chỉ còn
+                  <span>22.250.000đ</span> (số lượng có hạn, không áp dụng cùng
+                  chương trình khác).
                 </p>
               </div>
               <div class="left-buy-deal">
@@ -180,18 +213,28 @@
                       ><i class="fad fa-fire"></i> Sim data khủng giá tốt</a
                     >
                   </li>
+                  <li class="left-buy-other-list-free">
+                    <i class="fad fa-shopping-cart"></i>
+                    <span
+                      >Thanh toán online <span class="line">|</span> Miễn phí
+                      giao hàng thu tiền</span
+                    >
+                  </li>
                 </ul>
               </div>
               <div class="left-buy-checkout">
-                <button type="submit" class="checkout-btn">
+                <button
+                  type="submit"
+                  class="left-buy-checkout-btn checkout-btn"
+                >
                   <strong>MUA NGAY</strong>
                   <p>(Giao tận nơi hoặc lấy tại cửa hàng)</p>
                 </button>
-                <a href="#" class="checkout-btn">
+                <a href="#" class="left-buy-checkout-btn checkout-btn">
                   <strong>TRẢ GÓP 0%</strong>
                   <p>(Xét duyệt qua điện thoại)</p>
                 </a>
-                <a href="#" class="checkout-btn">
+                <a href="#" class="left-buy-checkout-btn checkout-btn">
                   <strong>TRẢ GÓP QUA THẺ</strong>
                   <p>(Visa, Master, JCB)</p>
                 </a>
@@ -215,5 +258,6 @@
     ></script>
     <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/hoverZoom.js"></script>
   </body>
 </html>
