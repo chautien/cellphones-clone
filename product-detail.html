@@ -102,147 +102,261 @@
         </div>
 
         <!-- ****** FORM ****** -->
-
-        <form method="post">
-          <div class="left">
-            <div class="left-image">
-              <div class="left-image-top">
-                <img
-                  src="image/prodetail/note_20_ultra_gold_4.jpg"
-                  alt=""
-                  class="left-image-top-img"
-                  id="productImage"
-                />
-                <div class="left-image-top-zoom" id="zoomResult"></div>
+        <div class="box">
+          <form method="post">
+            <div class="left">
+              <div class="left-image">
+                <div class="left-image-top">
+                  <img
+                    src="image/prodetail/note_20_ultra_gold_4.jpg"
+                    alt=""
+                    class="left-image-top-img"
+                    id="productImage"
+                  />
+                  <div class="left-image-top-zoom" id="zoomResult"></div>
+                </div>
+              </div>
+              <div class="left-buy">
+                <div class="left-buy-area">
+                  <label for="buy-area" class="left-buy-area-label"
+                    >Mua hàng từ:
+                  </label>
+                  <select
+                    name="buyArea"
+                    id="buy-area"
+                    class="left-buy-area-select"
+                  >
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="TP Hồ Chí Minh" selected>
+                      TP Hồ Chí Minh
+                    </option>
+                  </select>
+                </div>
+                <div class="left-buy-price">
+                  <span class="left-buy-price-new">22.250.000 đ</span>
+                  <span class="left-buy-price-old"
+                    >Giá niêm yết : <del>29.990.000 ₫</del></span
+                  >
+                  <span class="left-buy-price-credit">Trả góp 0%</span>
+                </div>
+                <div class="left-buy-option">
+                  <a href="#" class="left-buy-option-select">
+                    <h5 class="left-buy-option-select-title">
+                      Note 20 Ultra 5G
+                    </h5>
+                    <p class="left-buy-option-select-desc">25.600.000 đ</p>
+                  </a>
+                  <a href="#" class="left-buy-option-select">
+                    <h5 class="left-buy-option-select-title">Note 20 Ultra</h5>
+                    <p class="left-buy-option-select-desc">22.250.000 đ</p>
+                  </a>
+                  <a href="#" class="left-buy-option-select">
+                    <h5 class="left-buy-option-select-title">Note 20</h5>
+                    <p class="left-buy-option-select-desc">17.900.000 đ</p>
+                  </a>
+                </div>
+                <div
+                  style="display: flex; justify-content: flex-start"
+                  class="left-buy-option"
+                >
+                  <h3 class="left-buy-option-title">
+                    Chọn màu để xem giá và chi nhánh có hàng
+                  </h3>
+                  <a href="#" class="left-buy-option-select LBOS-cus">
+                    <h5 class="left-buy-option-select-title">Trắng</h5>
+                    <p class="left-buy-option-select-desc">22.600.000 đ</p>
+                  </a>
+                  <a href="#" class="left-buy-option-select LBOS-cus">
+                    <h5 class="left-buy-option-select-title">Vàng đồng</h5>
+                    <p class="left-buy-option-select-desc">22.250.000 đ</p>
+                  </a>
+                  <a href="#" class="left-buy-option-select LBOS-cus">
+                    <h5 class="left-buy-option-select-title">Đen</h5>
+                    <p class="left-buy-option-select-desc">22.250.000 đ</p>
+                  </a>
+                </div>
+                <div class="left-buy-hot">
+                  <p class="left-buy-hot-desc">
+                    Hotsales từ <span>20/11 - 27/11</span>: Giảm sốc chỉ còn
+                    <span>22.250.000đ</span> (số lượng có hạn, không áp dụng
+                    cùng chương trình khác).
+                  </p>
+                </div>
+                <div class="left-buy-deal">
+                  <p class="left-buy-deal-title">
+                    <i class="fad fa-gift"></i> KHUYẾN MÃI
+                  </p>
+                  <p class="left-buy-deal-text">Chương trình khuyến mại:</p>
+                  <ul class="left-buy-deal-more">
+                    <li class="left-buy-deal-detail">
+                      <a class="left-buy-deal-detail-link" href="#">
+                        [Từ 10-30/11] Giảm 30% đồng hồ Samsung Active 2 khi mua
+                        kèm điện thoại Samsung (Có điều kiện kèm theo)
+                      </a>
+                    </li>
+                    <li class="left-buy-deal-detail">
+                      <a class="left-buy-deal-detail-link" href="#">
+                        [Từ 16/11] Thu cũ lên đời Note 2020 - Trợ giá 3 triệu
+                        (có điều kiện kèm theo)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="left-buy-other">
+                  <ul class="left-buy-other-list">
+                    <li class="left-buy-other-list-item">
+                      * Giảm thêm tới 1% cho <a href="#">thành viên Smember</a>
+                    </li>
+                    <li class="left-buy-other-list-item">
+                      <a href="#">Thu cũ đổi mới - Trợ giá tốt nhất</a>
+                    </li>
+                    <li class="left-buy-other-list-item">
+                      <a href="#"
+                        ><i class="fad fa-fire"></i> Sim data khủng giá tốt</a
+                      >
+                    </li>
+                    <li class="left-buy-other-list-free">
+                      <i class="fad fa-shopping-cart"></i>
+                      <span
+                        >Thanh toán online <span class="line">|</span> Miễn phí
+                        giao hàng thu tiền</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="left-buy-checkout">
+                  <button
+                    type="submit"
+                    class="left-buy-checkout-btn checkout-btn"
+                  >
+                    <strong>MUA NGAY</strong>
+                    <p>(Giao tận nơi hoặc lấy tại cửa hàng)</p>
+                  </button>
+                  <a href="#" class="left-buy-checkout-btn checkout-btn">
+                    <strong>TRẢ GÓP 0%</strong>
+                    <p>(Xét duyệt qua điện thoại)</p>
+                  </a>
+                  <a href="#" class="left-buy-checkout-btn checkout-btn">
+                    <strong>TRẢ GÓP QUA THẺ</strong>
+                    <p>(Visa, Master, JCB)</p>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="left-buy">
-              <div class="left-buy-area">
-                <label for="buy-area" class="left-buy-area-label"
-                  >Mua hàng từ:
-                </label>
-                <select
-                  name="buyArea"
-                  id="buy-area"
-                  class="left-buy-area-select"
-                >
-                  <option value="Hà Nội">Hà Nội</option>
-                  <option value="TP Hồ Chí Minh" selected>
-                    TP Hồ Chí Minh
-                  </option>
-                </select>
+          </form>
+          <div class="right">
+            <div class="right-direct">
+              <h8 class="right-direct-title">HIỆN 23 CỬA HÀNG CÓ SẢN PHẨM</h8>
+              <p class="right-direct-text">
+                Cửa hàng còn hàng (Bấm xem dẫn đường):
+              </p>
+            </div>
+            <div class="right-locate">
+              <select name="locate" id="" class="right-locate-select">
+                <option value="none" selected>Quận/Huyện</option>
+                <option value="Quận 1">Quận 1</option>
+                <option value="Quận 2">Quận 2</option>
+                <option value="Quận 3">Quận 3</option>
+              </select>
+              <ul class="right-locate-list">
+                <li class="right-locate-list-item">
+                  <a href="#"
+                    >157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</a
+                  >
+                </li>
+                <li class="right-locate-list-item">
+                  <a href="#"
+                    >157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</a
+                  >
+                </li>
+                <li class="right-locate-list-item">
+                  <a href="#"
+                    >157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</a
+                  >
+                </li>
+                <li class="right-locate-list-item">
+                  <a href="#"
+                    >157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</a
+                  >
+                </li>
+                <li class="right-locate-list-item">
+                  <a href="#"
+                    >157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</a
+                  >
+                </li>
+                <li class="right-locate-list-item">
+                  <a href="#"
+                    >157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</a
+                  >
+                </li>
+                <li class="right-locate-list-item">
+                  <a href="#"
+                    >157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="right-status">
+              <div class="right-status-title">Tình trạng</div>
+              <div class="right-status-text">
+                Mới, đầy đủ phụ kiện từ nhà sản xuất
               </div>
-              <div class="left-buy-price">
-                <span class="left-buy-price-new">22.250.000 đ</span>
-                <span class="left-buy-price-old"
-                  >Giá niêm yết : <del>29.990.000 ₫</del></span
-                >
-                <span class="left-buy-price-credit">Trả góp 0%</span>
+            </div>
+            <div class="right-status">
+              <div class="right-status-title">Bảo hành</div>
+              <div class="right-status-text">
+                Bảo hành chính hãng 12 tháng tại trung tâm bảo hành ủy quyền, 1
+                đổi 1 trong 30 ngày nếu có lỗi phần cứng từ NSX.
               </div>
-              <div class="left-buy-option">
-                <a href="#" class="left-buy-option-select">
-                  <h5 class="left-buy-option-select-title">Note 20 Ultra 5G</h5>
-                  <p class="left-buy-option-select-desc">25.600.000 đ</p>
-                </a>
-                <a href="#" class="left-buy-option-select">
-                  <h5 class="left-buy-option-select-title">Note 20 Ultra</h5>
-                  <p class="left-buy-option-select-desc">22.250.000 đ</p>
-                </a>
-                <a href="#" class="left-buy-option-select">
-                  <h5 class="left-buy-option-select-title">Note 20</h5>
-                  <p class="left-buy-option-select-desc">17.900.000 đ</p>
-                </a>
+            </div>
+            <div class="right-prod">
+              <div class="right-prod-box">
+                <div class="box-first">
+                  <img
+                    src="image/prodetail/note_20_ultra_gold_4.jpg"
+                    alt=""
+                    class="right-prod-box-img"
+                  />
+                </div>
+                <div class="box-second">
+                  <h6 class="right-prod-box-title">
+                    Samsung Galaxy Note 20 Ultra Đã kích hoạt bảo hành
+                  </h6>
+                  <p class="right-prod-box-price">20.000.000 ₫</p>
+                  <div class="right-prod-box-care">
+                    <i class="fad fa-check-square"></i>
+                    <span>
+                      Bảo hành 12 tháng tại CellphoneS. 1 đổi 1 trong 30 ngày
+                      nếu có lỗi nhà sản xuất.
+                    </span>
+                  </div>
+                </div>
               </div>
-              <div
-                style="display: flex; justify-content: flex-start"
-                class="left-buy-option"
-              >
-                <h3 class="left-buy-option-title">
-                  Chọn màu để xem giá và chi nhánh có hàng
-                </h3>
-                <a href="#" class="left-buy-option-select LBOS-cus">
-                  <h5 class="left-buy-option-select-title">Trắng</h5>
-                  <p class="left-buy-option-select-desc">22.600.000 đ</p>
-                </a>
-                <a href="#" class="left-buy-option-select LBOS-cus">
-                  <h5 class="left-buy-option-select-title">Vàng đồng</h5>
-                  <p class="left-buy-option-select-desc">22.250.000 đ</p>
-                </a>
-                <a href="#" class="left-buy-option-select LBOS-cus">
-                  <h5 class="left-buy-option-select-title">Đen</h5>
-                  <p class="left-buy-option-select-desc">22.250.000 đ</p>
-                </a>
-              </div>
-              <div class="left-buy-hot">
-                <p class="left-buy-hot-desc">
-                  Hotsales từ <span>20/11 - 27/11</span>: Giảm sốc chỉ còn
-                  <span>22.250.000đ</span> (số lượng có hạn, không áp dụng cùng
-                  chương trình khác).
-                </p>
-              </div>
-              <div class="left-buy-deal">
-                <p class="left-buy-deal-title">
-                  <i class="fad fa-gift"></i> KHUYẾN MÃI
-                </p>
-                <p class="left-buy-deal-text">Chương trình khuyến mại:</p>
-                <ul class="left-buy-deal-more">
-                  <li class="left-buy-deal-detail">
-                    <a class="left-buy-deal-detail-link" href="#">
-                      [Từ 10-30/11] Giảm 30% đồng hồ Samsung Active 2 khi mua
-                      kèm điện thoại Samsung (Có điều kiện kèm theo)
-                    </a>
-                  </li>
-                  <li class="left-buy-deal-detail">
-                    <a class="left-buy-deal-detail-link" href="#">
-                      [Từ 16/11] Thu cũ lên đời Note 2020 - Trợ giá 3 triệu (có
-                      điều kiện kèm theo)
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="left-buy-other">
-                <ul class="left-buy-other-list">
-                  <li class="left-buy-other-list-item">
-                    * Giảm thêm tới 1% cho <a href="#">thành viên Smember</a>
-                  </li>
-                  <li class="left-buy-other-list-item">
-                    <a href="#">Thu cũ đổi mới - Trợ giá tốt nhất</a>
-                  </li>
-                  <li class="left-buy-other-list-item">
-                    <a href="#"
-                      ><i class="fad fa-fire"></i> Sim data khủng giá tốt</a
-                    >
-                  </li>
-                  <li class="left-buy-other-list-free">
-                    <i class="fad fa-shopping-cart"></i>
-                    <span
-                      >Thanh toán online <span class="line">|</span> Miễn phí
-                      giao hàng thu tiền</span
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="left-buy-checkout">
-                <button
-                  type="submit"
-                  class="left-buy-checkout-btn checkout-btn"
-                >
-                  <strong>MUA NGAY</strong>
-                  <p>(Giao tận nơi hoặc lấy tại cửa hàng)</p>
-                </button>
-                <a href="#" class="left-buy-checkout-btn checkout-btn">
-                  <strong>TRẢ GÓP 0%</strong>
-                  <p>(Xét duyệt qua điện thoại)</p>
-                </a>
-                <a href="#" class="left-buy-checkout-btn checkout-btn">
-                  <strong>TRẢ GÓP QUA THẺ</strong>
-                  <p>(Visa, Master, JCB)</p>
-                </a>
+              <div class="right-prod-box">
+                <div class="box-first">
+                  <img
+                    src="image/prodetail/note_20_ultra_gold_4.jpg"
+                    alt=""
+                    class="right-prod-box-img"
+                  />
+                </div>
+                <div class="box-second">
+                  <h6 class="right-prod-box-title">
+                    Samsung Galaxy Note 20 Ultra Đã kích hoạt bảo hành
+                  </h6>
+                  <p class="right-prod-box-price">20.000.000 ₫</p>
+                  <div class="right-prod-box-care">
+                    <i class="fad fa-check-square"></i>
+                    <span>
+                      Bảo hành 12 tháng tại CellphoneS. 1 đổi 1 trong 30 ngày
+                      nếu có lỗi nhà sản xuất.
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="right"></div>
-        </form>
+        </div>
       </section>
     </div>
 
