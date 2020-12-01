@@ -2,6 +2,15 @@ body {
   background-color: #fff;
 }
 
+input,
+button {
+  font-family: Nunito, sans-serif;
+}
+
+.wrapper {
+  height: 500vh;
+}
+
 .box {
   display: flex;
   align-items: flex-start;
@@ -11,6 +20,9 @@ body {
 .prod-ess {
   padding-top: 11rem;
   background-color: #fff;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.233);
 }
 .prod-ess-heading {
   display: flex;
@@ -345,6 +357,20 @@ body {
   height: 15rem;
   overflow-y: scroll;
 }
+.right-locate-list::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+.right-locate-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+.right-locate-list::-webkit-scrollbar-thumb {
+  background-color: #f90;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  border-radius: 20px;
+}
 .right-locate-list-item {
   display: block;
   height: 3rem;
@@ -405,6 +431,67 @@ body {
 .right-prod-box-care {
   line-height: 1.5;
   font-size: 1.2em;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transition: 3s linear;
+  }
+  to {
+    opacity: 1;
+    transition: 3s linear;
+  }
+}
+.prod-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.prod-desc-left {
+  width: 100%;
+  height: 80rem;
+  max-width: 84rem;
+  overflow-y: hidden;
+  position: relative;
+  animation: none;
+}
+.prod-desc-left-btn {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(to bottom, transparent 10%, #fff);
+  color: #e0052b;
+}
+.prod-desc-left-btn button {
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.671);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #e0052b;
+}
+.prod-desc-left-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+.prod-desc-left-text {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.prod-desc-left-img {
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 /*# sourceMappingURL=product-detail.css.map */

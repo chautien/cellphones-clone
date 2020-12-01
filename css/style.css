@@ -562,7 +562,6 @@ a:hover {
   text-align: center;
 }
 .accs-list-item-icon {
-  width: 100%;
   height: 9rem;
   background-color: #f8f8f8;
   display: flex;
@@ -572,15 +571,11 @@ a:hover {
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
-.accs-list-item-icon-img {
-  width: 6rem;
-  height: 6rem;
-}
-.accs-list-item-icon-img > img {
-  display: inline-block;
+.accs-list-item-icon > img {
   object-fit: contain;
 }
 .accs-list-item-text {
+  display: inline-block;
   font-size: 1.2rem;
   font-weight: 800;
 }
