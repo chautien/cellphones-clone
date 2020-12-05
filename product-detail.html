@@ -42,15 +42,32 @@
     <link rel="stylesheet" href="css/product-detail.css" />
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0&appId=200173771594458&autoLogAppEvents=1"
-      nonce="g2zWNBnw"
-    ></script>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v9.0",
+        });
+      };
 
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="110055090888760"
+      theme_color="#7646ff"
+    ></div>
     <div class="wrapper">
       <div class="banner-top">
         <span class="pulse-button"></span>
@@ -369,61 +386,428 @@
       </section>
       <section class="desc">
         <div class="container prod-desc">
-          <div class="prod-desc-left" id="prodShow">
-            <h3 class="prod-desc-left-title">
-              Samsung Note 20 Ultra: Thiết kế sang trọng và nhiều công nghệ cực
-              tốt
-            </h3>
-            <p class="prod-desc-left-text">
-              Samsung là gã khổng lồ công nghệ cực kỳ nổi tiếng đến từ đất nước
-              Hàn Quốc, mỗi chiếc điện thoại của hãng đều mang thiết kế hiện
-              đại, sang trọng đi kèm với đa dạng công nghệ cực kỳ nổi bật. Note
-              20 Ultra là một trong những chiếc smartphone nổi tiếng và đang
-              được nhiều người quan tâm, đón nhận. Samsung hứa hẹn sẽ chiều lòng
-              khách hàng với thiết kế lộng lẫy, cùng với vô vàng công nghệ, chip
-              xử lý mới mẻ, thật hiện đại. Ngoài ra, bạn cũng có thể tham khảo
-              thêm Note 20 Ultra 5G. <br />
-              Và nhiều khả năng cuối năm nay, Samsung sẽ cho ra mắt bộ ba
-              smartphone thuộc dòng S mới bao gồm Galaxy S21, S21 Plus và
-              Samsung S21 Ultra, sớm hơn so với mọi năm nhằm cạnh tranh với dòng
-              iPhone 12 series của Apple.
-            </p>
-            <h3 class="prod-desc-left-title">
-              Màn hình AMOLED cực sống động kèm với hệ điều hành Android, One UI
-              2.1
-            </h3>
-            <img
-              src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/samsung/galaxy-note-20-ultra3.jpg"
-              alt=""
-              class="prod-desc-left-img"
-            />
-            <p class="prod-desc-left-text">
-              Máy được cài sẵn hệ điều hành Android. Đây dường như là hệ điều
-              hành thông dụng và được nhiều người sử dụng quen tay nhất. Đi kèm
-              với đó là skin One UI 2.1 dựa trên Android 10, tạo nên nhiều chức
-              năng, công cụ hiện đại có trên chiếc Samsung Galaxy Note này.
-            </p>
-            <h3 class="prod-desc-left-title">
-              Trang bị chip Exynos 990 cực kỳ hiện đại cùng với cấu hình CPU nổi
-              bật
-            </h3>
-            <p class="prod-desc-left-text">
-              Điều khiến mọi người bất ngờ nhất trên Samsung Note 20 Ultra đó là
-              chip Exynos 990, mà Samsung đã nghiên cứu và áp dụng ngay trên
-              điện thoại này. Đây dường như là con chip mạnh mẽ và hiện đại bậc
-              nhất, khiến người dùng hoàn toàn hài lòng. Bên cạnh đó là không
-              còn sự hổ thẹn đến từ phía Samsung.
-            </p>
+          <div class="prod-desc-left">
+            <div class="desc-left-box" id="prodLeftShow">
+              <h3 class="prod-desc-left-title">
+                Samsung Note 20 Ultra: Thiết kế sang trọng và nhiều công nghệ
+                cực tốt
+              </h3>
+              <p class="prod-desc-left-text">
+                Samsung là gã khổng lồ công nghệ cực kỳ nổi tiếng đến từ đất
+                nước Hàn Quốc, mỗi chiếc điện thoại của hãng đều mang thiết kế
+                hiện đại, sang trọng đi kèm với đa dạng công nghệ cực kỳ nổi
+                bật. Note 20 Ultra là một trong những chiếc smartphone nổi tiếng
+                và đang được nhiều người quan tâm, đón nhận. Samsung hứa hẹn sẽ
+                chiều lòng khách hàng với thiết kế lộng lẫy, cùng với vô vàng
+                công nghệ, chip xử lý mới mẻ, thật hiện đại. Ngoài ra, bạn cũng
+                có thể tham khảo thêm Note 20 Ultra 5G. <br />
+                Và nhiều khả năng cuối năm nay, Samsung sẽ cho ra mắt bộ ba
+                smartphone thuộc dòng S mới bao gồm Galaxy S21, S21 Plus và
+                Samsung S21 Ultra, sớm hơn so với mọi năm nhằm cạnh tranh với
+                dòng iPhone 12 series của Apple.
+              </p>
+              <h3 class="prod-desc-left-title">
+                Màn hình AMOLED cực sống động kèm với hệ điều hành Android, One
+                UI 2.1
+              </h3>
+              <img
+                src="https://cdn.cellphones.com.vn/media/wysiwyg/mobile/samsung/galaxy-note-20-ultra3.jpg"
+                alt=""
+                class="prod-desc-left-img"
+              />
+              <p class="prod-desc-left-text">
+                Máy được cài sẵn hệ điều hành Android. Đây dường như là hệ điều
+                hành thông dụng và được nhiều người sử dụng quen tay nhất. Đi
+                kèm với đó là skin One UI 2.1 dựa trên Android 10, tạo nên nhiều
+                chức năng, công cụ hiện đại có trên chiếc Samsung Galaxy Note
+                này.
+              </p>
+              <h3 class="prod-desc-left-title">
+                Trang bị chip Exynos 990 cực kỳ hiện đại cùng với cấu hình CPU
+                nổi bật
+              </h3>
+              <p class="prod-desc-left-text">
+                Điều khiến mọi người bất ngờ nhất trên Samsung Note 20 Ultra đó
+                là chip Exynos 990, mà Samsung đã nghiên cứu và áp dụng ngay
+                trên điện thoại này. Đây dường như là con chip mạnh mẽ và hiện
+                đại bậc nhất, khiến người dùng hoàn toàn hài lòng. Bên cạnh đó
+                là không còn sự hổ thẹn đến từ phía Samsung.
+              </p>
 
-            <div class="prod-desc-left-btn">
-              <button id="leftBtn">
-                Xem thêm đánh giá <i class="fad fa-chevron-down"></i>
-              </button>
+              <div class="prod-desc-left-btn" id="prodLeftBox">
+                <button id="prodLeftBtn">
+                  Xem thêm đánh giá <i class="fad fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="prod-desc-relate">
+              <h5 class="desc-relate-title">Các sản phẩm tương tự</h5>
+              <div class="desc-relate-box">
+                <div class="desc-relate-cart">
+                  <a href="#" class="desc-relate-cart-img">
+                    <img
+                      src="image/relate/12mini-f9369552-53d0-4ee5-b55b-cfffef6993d2.png"
+                      alt=""
+                      class="desc-relate-cart-img-detail"
+                    />
+                  </a>
+                  <a href="#" class="desc-relate-cart-title">
+                    <span class="desc-relate-cart-title-link"
+                      >iPhone 12 Chính Hãng (VN/A)</span
+                    >
+                  </a>
+                  <div class="desc-relate-cart-price">
+                    <span class="desc-relate-cart-price-new">22.490.000 đ</span
+                    ><span class="desc-relate-cart-price-old"
+                      >24.990.000 đ</span
+                    >
+                  </div>
+                  <a href="#" class="desc-relate-cart-compare"
+                    >So sánh chi tiết</a
+                  >
+                </div>
+                <div class="desc-relate-cart">
+                  <a href="#" class="desc-relate-cart-img">
+                    <img
+                      src="image/relate/rog_3.jpg"
+                      alt=""
+                      class="desc-relate-cart-img-detail"
+                    />
+                  </a>
+                  <a href="#" class="desc-relate-cart-title">
+                    <span class="desc-relate-cart-title-link"
+                      >ASUS ROG Phone 3 Chính hãng</span
+                    >
+                  </a>
+                  <div class="desc-relate-cart-price">
+                    <span class="desc-relate-cart-price-new">21.990.000 đ</span
+                    ><span class="desc-relate-cart-price-old"
+                      >22.990.000 đ</span
+                    >
+                  </div>
+                  <a href="#" class="desc-relate-cart-compare"
+                    >So sánh chi tiết</a
+                  >
+                </div>
+                <div class="desc-relate-cart">
+                  <a href="#" class="desc-relate-cart-img">
+                    <img
+                      src="image/relate/12mini-f9369552-53d0-4ee5-b55b-cfffef6993d2.png"
+                      alt=""
+                      class="desc-relate-cart-img-detail"
+                    />
+                  </a>
+                  <a href="#" class="desc-relate-cart-title">
+                    <span class="desc-relate-cart-title-link"
+                      >iPhone 12 128GB Chính Hãng (VN/A)</span
+                    >
+                  </a>
+                  <div class="desc-relate-cart-price">
+                    <span class="desc-relate-cart-price-new">23.690.000 đ</span
+                    ><span class="desc-relate-cart-price-old"
+                      >26.990.000 đ</span
+                    >
+                  </div>
+                  <a href="#" class="desc-relate-cart-compare"
+                    >So sánh chi tiết</a
+                  >
+                </div>
+                <div class="desc-relate-cart">
+                  <a href="#" class="desc-relate-cart-img">
+                    <img
+                      src="image/relate/637170935875912528_ss-s20-ultra-den-1.png"
+                      alt=""
+                      class="desc-relate-cart-img-detail"
+                    />
+                  </a>
+                  <a href="#" class="desc-relate-cart-title">
+                    <span class="desc-relate-cart-title-link"
+                      >Samsung Galaxy S20 Ultra</span
+                    >
+                  </a>
+                  <div class="desc-relate-cart-price">
+                    <span class="desc-relate-cart-price-new">21.800.000 đ</span
+                    ><span class="desc-relate-cart-price-old"
+                      >29.990.000 đ</span
+                    >
+                  </div>
+                  <a href="#" class="desc-relate-cart-compare"
+                    >So sánh chi tiết</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="prod-desc-comment">
+              <h5 class="prod-desc-comment-title">Hỏi và đáp</h5>
+              <form class="prod-desc-comment-form">
+                <textarea
+                  cols="5"
+                  rows="5"
+                  class="prod-desc-comment-form-input"
+                  placeholder="Xin mời để lại câu hỏi, CellphoneS sẽ trả lời trong 1h từ 8h - 22h mỗi ngày."
+                ></textarea>
+                <div class="prod-desc-comment-form-row">
+                  <span class="prod-desc-comment-form-row-tof"
+                    >Quy định đăng bình luận</span
+                  >
+                  <button
+                    type="submit"
+                    class="button prod-desc-comment-form-row-btn"
+                  >
+                    GỬI
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="prod-comment">
+              <ul class="prod-comment-list">
+                <li class="prod-comment-list-item">
+                  <div class="prod-comment-list-item-question">
+                    <h6 class="item-question-user">Donald Trump</h6>
+                    <p class="item-question-detail">
+                      Trả góp sp này với thẻ tín dụng Sacombank thì áp dụng ra
+                      sao shop ơi
+                    </p>
+                    <div class="item-question-row">
+                      <i class="fad fa-clock"></i>
+                      <span class="item-question-row-text">2 giờ trước</span>
+                    </div>
+                  </div>
+                  <div class="prod-comment-list-item-question">
+                    <h6 class="item-question-user">Hương</h6>
+                    <p class="item-question-detail">
+                      Sp này có trả góp 0% với thẻ tín dụng ko?
+                    </p>
+                    <div class="item-question-row">
+                      <i class="fad fa-clock"></i>
+                      <span class="item-question-row-text">5 giờ trước</span>
+                    </div>
+                  </div>
+                  <div class="prod-comment-list-item-question">
+                    <h6 class="item-question-user">Châu Tiến</h6>
+                    <p class="item-question-detail">
+                      Mua luôn của hàng thì trả góp sao ạ
+                    </p>
+                    <div class="item-question-row">
+                      <i class="fad fa-clock"></i>
+                      <span class="item-question-row-text">1 phút trước</span>
+                    </div>
+                  </div>
+                  <div class="prod-comment-list-item-question">
+                    <h6 class="item-question-user">Test</h6>
+                    <p class="item-question-detail">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Alias consequatur incidunt fugit quos aliquid officia
+                      illum cupiditate sint magni labore! Doloremque quibusdam
+                      quidem expedita aliquid deleniti, consequuntur magni saepe
+                      odit.
+                    </p>
+                    <div class="item-question-row">
+                      <i class="fad fa-clock"></i>
+                      <span class="item-question-row-text">8 giờ trước</span>
+                    </div>
+                  </div>
+                  <div class="prod-comment-list-item-question">
+                    <h6 class="item-question-user">Tim Cook</h6>
+                    <p class="item-question-detail">
+                      Tui bán sỉ iDevice nè cửa hàng có nhập không?
+                    </p>
+                    <div class="item-question-row">
+                      <i class="fad fa-clock"></i>
+                      <span class="item-question-row-text">6 giờ trước</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="prod-desc-right"></div>
+          <div class="prod-desc-right">
+            <div class="desc-right-heading">
+              <h5 class="desc-right-heading-text">Thông số kỹ thuật</h5>
+            </div>
+            <table class="prod-info">
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Hãng sản xuất</td>
+                <td class="prod-info-row-text">Samsung</td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Kích thước</td>
+                <td class="prod-info-row-text">164.8 x 77.2 x 8.1 mm</td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Trọng lượng</td>
+                <td class="prod-info-row-text">208 g</td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Bộ nhớ đệm / Ram</td>
+                <td class="prod-info-row-text">8 GB</td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Bộ nhớ trong</td>
+                <td class="prod-info-row-text">256 GB</td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Loại SIM</td>
+                <td class="prod-info-row-text">2 SIM (Nano-SIM)</td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Loại màn hình</td>
+                <td class="prod-info-row-text">
+                  Dynamic AMOLED 2X, 16M colors, Corning Gorilla Glass Victus,
+                  HDR10+, Always-on display, 120Hz@FHD/60Hz@QHD refresh rate
+                </td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Kích thước màn hình</td>
+                <td class="prod-info-row-text">6.9 inches</td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Độ phân giải màn hình</td>
+                <td class="prod-info-row-text">1440 x 3088 pixels</td>
+              </tr>
+              <tr class="prod-info-row">
+                <td class="prod-info-row-text">Hệ điều hành</td>
+                <td class="prod-info-row-text">Android</td>
+              </tr>
+            </table>
+            <button class="desc-right-btn">Xem thêm</button>
+          </div>
         </div>
       </section>
+
+      <div
+        style="border-top: 0.5px solid rgba(128, 128, 128, 0.308)"
+        class="footer-top"
+      >
+        <footer class="container footer-contact">
+          <div class="footer-contact-col">
+            <h6 class="contact-col-title">Tìm cửa hàng</h6>
+            <ul class="contact-col-list">
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Tìm cửa hàng gần nhất</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link">Mua hàng từ xa</a>
+              </li>
+              <li class="contact-col-item"></li>
+            </ul>
+            <h6 class="contact-col-title">Phương thức thanh toán</h6>
+            <div class="contact-col-box">
+              <i class="contact-col-box-icon"></i>
+              <i class="contact-col-box-icon"></i>
+              <i class="contact-col-box-icon"></i>
+              <i class="contact-col-box-icon"></i>
+              <i class="contact-col-box-icon"></i>
+              <i class="contact-col-box-icon"></i>
+            </div>
+          </div>
+          <div class="footer-contact-col">
+            <ul class="contact-col-list">
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Gọi mua hàng: <span>1800.2097</span> (8h00 - 22h00)</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Gọi mua hàng: <span>1800.2097</span> (8h00 - 22h00)</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Gọi mua hàng: <span>1800.2097</span> (8h00 - 22h00)</a
+                >
+              </li>
+            </ul>
+            <h6 class="contact-col-title">Đối tác dịch vụ bảo hành</h6>
+            <ul class="contact-col-list">
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Điện thoại - Laptop</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact-col">
+            <ul class="contact-col-list">
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Mua hàng và thanh toán Online</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Mua hàng trả góp Online</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Hủy giao dịch và đổi trả</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Tra thông tin đơn hàng</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link">Tra điểm Smember</a>
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Tra thông tin bảo hành</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Trung tâm bảo hành chính hãng</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Quy định về việc sao lưu dữ liệu</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Dịch vụ bảo hành điện thoại</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact-col">
+            <ul class="contact-col-list">
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Chính sách Bảo hành</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link">Chính sách sử dụng</a>
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link">Chính sách bảo mật</a>
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link"
+                  >Liên hệ hợp tác kinh doanh</a
+                >
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link">Đơn Doanh nghiệp</a>
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link">Ưu đãi từ đối tác</a>
+              </li>
+              <li class="contact-col-item">
+                <a href="#" class="contact-col-item-link">Tuyển dụng</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <script
@@ -439,5 +823,6 @@
     <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/hoverZoom.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

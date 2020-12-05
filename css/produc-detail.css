@@ -4,7 +4,11 @@ body {
 
 input,
 button {
-  font-family: "Nunito", sans-serif;
+  font-family: Nunito, sans-serif;
+}
+
+.wrapper {
+  height: 500vh;
 }
 
 .box {
@@ -434,13 +438,12 @@ button {
   justify-content: space-between;
   align-items: flex-start;
 }
-.prod-desc .desc-left-box {
+.prod-desc-left {
   width: 100%;
-  height: 50rem;
+  height: 80rem;
   max-width: 84rem;
   overflow-y: hidden;
   position: relative;
-  margin-bottom: 3rem;
 }
 .prod-desc-left-btn {
   width: 100%;
@@ -458,7 +461,7 @@ button {
 }
 .prod-desc-left-btn button {
   height: 2rem;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.671);
   border: none;
   outline: none;
   cursor: pointer;
@@ -483,34 +486,8 @@ button {
   max-width: calc(120rem - 85rem);
   width: 100%;
   border: 1px solid rgba(128, 128, 128, 0.212);
-  padding-bottom: 1rem;
 }
-
-.prod-info {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
-}
-.prod-info-row {
-  width: 100%;
-}
-.prod-info-row-text {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.164);
-  font-size: 1.2rem;
-  color: #444444;
-  vertical-align: middle;
-  padding: 1rem 0;
-  line-height: 1.5;
-}
-.prod-info-row-text:first-child {
-  width: 35%;
-  padding-right: 1rem;
-}
-.prod-info-row-text:last-child {
-  font-weight: 700;
-}
-
-.desc-right-heading {
+.prod-desc-right .desc-right-heading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,203 +495,9 @@ button {
   background-color: #f7f7f7;
   border-bottom: 1px solid rgba(128, 128, 128, 0.212);
 }
-.desc-right-heading-text {
+.prod-desc-right .desc-right-heading-text {
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-.desc-right-btn {
-  outline: none;
-  user-select: none;
-  border: 1px solid rgba(128, 128, 128, 0.411);
-  background-color: #fff;
-  display: block;
-  color: #e0052b;
-  margin: 0 auto;
-  width: 96%;
-  padding: 0.8rem;
-  cursor: pointer;
-  font-size: 1.4em;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  transition: all 0.15s linear;
-}
-.desc-right-btn:hover {
-  border: 1px solid rgba(128, 128, 128, 0.644);
-}
-
-.prod-desc-relate {
-  padding: 3rem 0 2rem;
-  border-bottom: 0.8px solid rgba(128, 128, 128, 0.322);
-  border-top: 0.8px solid rgba(128, 128, 128, 0.322);
-}
-
-.desc-relate-title {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #000;
-  margin-bottom: 1rem;
-}
-.desc-relate-box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.desc-relate-cart {
-  max-width: calc(100% / 4);
-  width: 100%;
-  padding: 1rem;
-}
-.desc-relate-cart-img {
-  display: block;
-  width: 80%;
-  height: 16rem;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
-}
-.desc-relate-cart-img-detail {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-.desc-relate-cart-title {
-  margin-bottom: 0.8rem;
-  display: inline-block;
-  height: 3.1rem;
-}
-.desc-relate-cart-title-link {
-  line-height: 1.2;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #333;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.desc-relate-cart-price {
-  width: 100%;
-  display: flex;
-  margin-bottom: 1rem;
-  align-items: flex-end;
-}
-.desc-relate-cart-price-new {
-  margin-right: 1rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #e0052b;
-}
-.desc-relate-cart-price-old {
-  text-decoration: line-through;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #444444;
-}
-.desc-relate-cart-compare {
-  font-size: 1.2rem;
-  color: #e0052b;
-}
-.desc-relate-cart-compare:hover, .desc-relate-cart-compare:active {
-  color: #e0052b;
-}
-
-.prod-desc-comment {
-  padding: 1rem 0;
-  margin-bottom: 1rem;
-}
-.prod-desc-comment-title {
-  font-size: 2rem;
-  color: #444444;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-.prod-desc-comment-form {
-  border: 1px solid rgba(128, 128, 128, 0.473);
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-.prod-desc-comment-form-input {
-  border-radius: 0.6rem;
-  width: 100%;
-  resize: vertical;
-  height: 12rem;
-  outline: none;
-  border: none;
-  padding: 1rem 0 0 1rem;
-  font-family: "Nunito", sans-serif;
-}
-.prod-desc-comment-form-input::-webkit-input-placeholder {
-  font-family: Nunito, sans-serif;
-}
-.prod-desc-comment-form-row {
-  width: 100%;
-  border-top: 1px solid rgba(128, 128, 128, 0.473);
-  padding: 0.6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.prod-desc-comment-form-row-tof {
-  color: #e0052b;
-  font-size: 1.2rem;
-}
-.prod-desc-comment-form-row-tof::selection {
-  background-color: #f1c40f;
-  color: black;
-}
-.prod-desc-comment-form-row-btn {
-  border: none;
-  background-color: #e0052b;
-  outline: none;
-  user-select: none;
-  color: #f7f7f7;
-  padding: 0.4rem 2.5rem;
-  font-size: 1.4rem;
-  font-variant: small-caps;
-  font-weight: 600;
-  border-radius: 0.4rem;
-  transition: all 0.15s linear;
-}
-.prod-desc-comment-form-row-btn:hover {
-  color: #fff;
-}
-
-.prod-comment {
-  margin-bottom: 3rem;
-}
-.prod-comment-list {
-  padding-left: 3rem;
-}
-.prod-comment-list-item-question {
-  margin-bottom: 2rem;
-}
-
-.item-question-user {
-  font-size: 1.4rem;
-  color: #000;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-.item-question-detail {
-  margin-left: 2rem;
-  font-size: 1.3rem;
-  color: #333333;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-.item-question-row {
-  margin-left: 2rem;
-}
-.item-question-row-text {
-  font-size: 1.3rem;
-  color: #333333;
-}
-.item-question-row i {
-  color: #e0052b;
-  margin-right: 0.3rem;
-}
-
-/*# sourceMappingURL=product-detail.css.map */
+/*# sourceMappingURL=produc-detail.css.map */

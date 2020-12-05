@@ -12,11 +12,11 @@ $(document).ready(function () {
   });
   $(".slider-nav").slick({
     slide: ".slider-nav-item",
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: ".slider-for",
     dots: false,
-    centerMode: true,
+    centerMode: false,
     focusOnSelect: true,
   });
 });
